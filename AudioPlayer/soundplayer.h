@@ -35,4 +35,5 @@ private slots:
     void slotSetDuration(qint64);
     void slotStatusChanged(QMediaPlayer::State);
 };
-#endif // SOUNDPLAYER_H
+#endif
+
