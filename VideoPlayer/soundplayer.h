@@ -1,6 +1,5 @@
 // created by Vecnik88
 // Videoplayer
-
 #ifndef SOUNDPLAYER_H
 #define SOUNDPLAYER_H
 
@@ -37,3 +36,4 @@ private slots:
     void slotStatusChanged(QMediaPlayer::State);
 };
 #endif // SOUNDPLAYER_H
+
