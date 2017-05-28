@@ -9,4 +9,6 @@ class VideoPlayer : public SoundPlayer{
 public:
     VideoPlayer(QWidget* wgt = 0);
 };
+
 #endif // VIDEOPLAYER_H
+
