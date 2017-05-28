@@ -30,3 +30,5 @@ DEFINES += QT_DEPRECATED_WARNINGS
 HEADERS += \
     soundplayer.h \
     videoplayer.h
+
+
