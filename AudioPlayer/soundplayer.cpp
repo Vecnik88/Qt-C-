@@ -105,3 +105,5 @@ void SoundPlayer::slotSetSliderPosition(qint64 n){
     int nDuration = m_psldPosition->maximum();
     m_plblRemain->setText(msecsToString(nDuration-n));
 }
+
+
