@@ -1,5 +1,4 @@
 // электронный индикатор
-
 #include <QApplication>
 #include <QtWidgets>
 
