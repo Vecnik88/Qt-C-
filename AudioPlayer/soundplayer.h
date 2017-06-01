@@ -36,5 +36,3 @@ private slots:
     void slotStatusChanged(QMediaPlayer::State);
 };
 #endif
-
-
