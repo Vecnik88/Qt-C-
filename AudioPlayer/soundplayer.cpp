@@ -84,7 +84,6 @@ void SoundPlayer::slotStatusChanged(QMediaPlayer::State state){
 void SoundPlayer::slotSetMediaPosition(int n){
     m_pmp->setPosition(n);
 }
-
 QString SoundPlayer::msecsToString(qint64 n){
     int nHours = (n/(60*60*1000));
     int nMinute = ((n%(60*60*100))/(60*1000));
@@ -92,18 +91,14 @@ QString SoundPlayer::msecsToString(qint64 n){
 
     return QTime(nHours, nMinute, nSecond).toString("hh:mm:ss");
 }
-
 void SoundPlayer::slotSetDuration(qint64 n){
     m_psldPosition->setRange(0, n);
     m_plblCurrent->setText(msecsToString(0));
     m_plblRemain->setText(msecsToString(n));
 }
-
 void SoundPlayer::slotSetSliderPosition(qint64 n){
     m_psldPosition->setValue(n);
     m_plblCurrent->setText(msecsToString(n));
     int nDuration = m_psldPosition->maximum();
     m_plblRemain->setText(msecsToString(nDuration-n));
 }
-
-
