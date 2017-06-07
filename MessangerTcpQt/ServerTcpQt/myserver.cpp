@@ -61,3 +61,6 @@ void MyServer::sendToClient(QTcpSocket* pSocket, const QString& str){
 
     pSocket->write(arrBlock);
 }
+
+
+
