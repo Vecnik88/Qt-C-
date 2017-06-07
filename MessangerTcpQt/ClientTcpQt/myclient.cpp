@@ -68,3 +68,6 @@ void MyClient::slotError(QAbstractSocket::SocketError){
     QString strError = "Error:";
     m_ptxtInfo->append(strError);
 }
+
+
+
