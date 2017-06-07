@@ -29,3 +29,7 @@ private slots:
 };
 
 #endif // MYCLIENT_H
+
+
+
+
