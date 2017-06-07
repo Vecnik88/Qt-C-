@@ -27,3 +27,5 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 HEADERS += \
     myserver.h
+
+
