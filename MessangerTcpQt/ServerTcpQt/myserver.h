@@ -25,3 +25,5 @@ public slots:
     virtual void slotNewConnection();
     void slotReadClient();
 };
+
+
