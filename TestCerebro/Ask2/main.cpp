@@ -1,4 +1,4 @@
-// Created by Vecnik88
+// Created by Vecnik88 23.06.2017
 /*                          Тестовое задание номер 2
 
 Дано:
