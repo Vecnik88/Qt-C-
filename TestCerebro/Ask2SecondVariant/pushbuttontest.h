@@ -36,5 +36,3 @@ public slots:
     void slotStandartImage();               // <---. устанавливает стандартную иконку на кнопку
 };
 #endif // PUSHBUTTONTEST_H
-
-
