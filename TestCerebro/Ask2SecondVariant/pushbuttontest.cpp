@@ -50,6 +50,3 @@ QImage WidgetTest::tint(QImage src, QColor color, qreal strength){
 
     return res;
 }
-
-
-
