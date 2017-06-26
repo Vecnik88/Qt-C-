@@ -20,6 +20,3 @@ public: Q_SIGNALS:
     void notHovered();                              // <---. сигнал мы вышли из зоны
 };
 #endif // MYBUTTON_H
-
-
-
