@@ -28,5 +28,3 @@ DEFINES += QT_DEPRECATED_WARNINGS
 HEADERS += \
     pushbuttontest.h \
     mybutton.h
-
-
