@@ -19,14 +19,15 @@
 
 class WidgetTest : public QWidget {
     Q_OBJECT
+
 public:
     WidgetTest(const QString& _str = "", QWidget* wgt = Q_NULLPTR);
 
 private:
     QString str;                            // <---. адрес нашей иконки
     MyButton* pcmd1;
+    MyButton* pcmd2;
     QHBoxLayout* hbxl;
-    QPushButton* pcmd2;
 
     // ф-ция отвечающая за изменение нашей картинки
     QImage tint(QImage src, QColor color, qreal strength);

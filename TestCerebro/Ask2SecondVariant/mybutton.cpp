@@ -1,10 +1,12 @@
 #include "mybutton.h"
 
 MyButton::MyButton(const QString& _str, QWidget* wgt): QPushButton(wgt), str(_str){
+    const size_t sizeIcon = 150;
+    const size_t sizeButton = 100;
     setMouseTracking(true);
-    setFixedSize(100, 100);
+    setFixedSize(sizeButton, sizeButton);
     setIcon(QIcon(QPixmap(str)));
-    setIconSize(QSize(150, 150));
+    setIconSize(QSize(sizeIcon, sizeIcon));
 }
 
 void MyButton::leaveEvent(QEvent* e)

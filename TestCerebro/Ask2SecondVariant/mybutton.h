@@ -5,11 +5,12 @@
 
 class MyButton : public QPushButton {
     Q_OBJECT
+
 private:
     QString str;
 
 public:
-    MyButton(const QString& _str, QWidget* wgt = Q_NULLPTR);
+    MyButton(const QString& _str = "", QWidget* wgt = Q_NULLPTR);
 
 protected:
     virtual void enterEvent(QEvent* e);             // <---. событие входа в зону кнопки

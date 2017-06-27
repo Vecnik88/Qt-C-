@@ -2,13 +2,8 @@
 
 WidgetTest::WidgetTest(const QString& _str, QWidget* wgt):QWidget(wgt), str(_str){
     pcmd1 = new MyButton(str);
-
-    // настройки второй кнопки
-    pcmd2 = new QPushButton;
-    pcmd2->setIcon(QIcon(QPixmap(str)));
-    pcmd2->setIconSize(QSize(150, 150));
+    pcmd2 = new MyButton(str);
     pcmd2->setStyleSheet("QPushButton:pressed {background-color: green; border:none;}");
-    pcmd2->setFixedSize(100, 100);
 
     // накладываем кнопки на виджет в виде горизонтального слоя
     hbxl = new QHBoxLayout;
@@ -17,18 +12,17 @@ WidgetTest::WidgetTest(const QString& _str, QWidget* wgt):QWidget(wgt), str(_str
     setLayout(hbxl);
 
     // когда мышка над кнопкой
-    connect(pcmd1, SIGNAL(hovered()), this, SLOT(slotImageGreen(/*str*/)));
+    connect(pcmd1, SIGNAL(hovered()), this, SLOT(slotImageGreen()));
     // когда мышка ушла из зоны кнопки
-    connect(pcmd1, SIGNAL(notHovered()), this, SLOT(slotStandartImage(/*str*/)));
+    connect(pcmd1, SIGNAL(notHovered()), this, SLOT(slotStandartImage()));
 }
 
-void WidgetTest::slotStandartImage(/*const QString& str*/){     // <---. устанавливает стандартную картинку
+void WidgetTest::slotStandartImage(){     // <---. устанавливает стандартную картинку
     pcmd1->setIcon(QIcon(QPixmap(str)));
 }
 
-void WidgetTest::slotImageGreen(/*const QString& str*/){        // <---. устанавливает обработанную картинку
-    pcmd1->setIcon(QIcon(QPixmap::fromImage(tint(QImage(str),
-                   QColor(0,255,0),1.0))));
+void WidgetTest::slotImageGreen(){        // <---. устанавливает обработанную картинку
+    pcmd1->setIcon(QIcon(QPixmap::fromImage(tint(QImage(str), QColor(0,255,0),1.0))));
 }
 
 // отвечает за изменения цвета у картинки
